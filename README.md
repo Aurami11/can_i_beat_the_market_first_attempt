@@ -1,4 +1,4 @@
-# can_i_beat_the_market_first_attempt
+# can_i_beat_the_market_v1.0.0
 
 ## Project Overview
 

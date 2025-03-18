@@ -2,37 +2,41 @@
 
 ## Project Overview
 
-This project is an attempt to predict market trends using simple logic and machine learning. The idea is to leverage global news data from GDELT and financial data from Yahoo Finance to build a predictive model. The goal is to understand whether news sentiment and financial market data can help forecast stock movements.
+This project explores market trend prediction using simple logic and machine learning techniques. The goal is to assess whether certain data can be used to anticipate stock movements, particularly in the complex financial context.
 
 ## Data Sources
 
-- **GDELT**: I used the GDELT database to gather global news data. However, processing this data was quite challenging due to its large size and complexity. I was initially aiming to cover 10 years of data, but due to the data's weight and the need for extensive cleaning, I had to limit the scope to 3 years.
-  
-- **Yahoo Finance**: For the asset prices, I utilized the `yfinance` API to retrieve historical stock data. Unfortunately, due to data limitations, I could only retrieve daily prices rather than high-frequency data.
+- **Financial Data**: I used historical financial data to test the model, primarily from 2018-2019, although missing data reduced the dataset to about 200 days.
+- **Other Sources**: Additional data sources were explored, but technical constraints limited their use in this project.
 
-- **News Websites**: I attempted to scrape news websites for additional insights, but many of the sites were either inaccessible or difficult to scrape, limiting the data I could use.
+## Approaches and Methodology
 
-## Tools & Technologies Used
+Two main approaches were employed:
 
-- **OpenAI API**: I used various OpenAI models, including GPT-3.5, GPT-4 (mini), and MISTRALAI, to process the text data from GDELT. However, the size and complexity of the data caused issues in the second phase of the process (post-data cleaning and scraping).
-  
-- **Data Aggregation & Compression**: Given the large volume of data, I encountered challenges in aggregating and compressing the data in a way that makes it usable for model training.
+1. **Supervised learning with machine learning**: This method applied machine learning models to predict stock prices. The results showed a generally low R², and sometimes even negative, but this is understandable in the context of finance, where uncertainty is always present. Despite this, the predictions were surprisingly relevant in some cases.
 
-## Challenges Faced
+2. **Theoretical approach based on matrix calculations**: A more conceptual approach was implemented, inspired by theoretical ideas. This also yielded interesting results, and the experience of its implementation was particularly enriching.
 
-- **Data Processing**: The GDELT data was difficult to process due to its size and the complexity of handling news data at a global scale. This required significant preprocessing, and I had to reduce the timeframe of the data from 10 years to 3 years.
-  
-- **Data Access Issues**: Several news websites were either un-scrapable or blocked, preventing me from incorporating a wide range of news sources into the dataset.
+### Models Used:
+- Linear Regression
+- Gradient Boosting
+- Supervised learning based on Decision Trees
 
-- **Large Data Volumes**: The sheer volume of the data made it difficult to complete the second phase of processing. Data aggregation and compression techniques are still being worked on to handle this.
+## Results
 
-## Progress & Next Steps
+Despite a low R² and sometimes negative results, the predictions showed interesting potential. This tool could have been useful as an indicator back in 2018. Below are some visual results from the tests conducted:
 
-- **Phase 1 Completed**: The first phase of the project, which involved scraping and processing the GDELT data, has been completed. 
-- **Phase 2**: Currently, I’m working on finishing the second phase of data processing, which involves further aggregating and compressing the data to make it suitable for model training.
-  
-- **Model Training**: Despite having a dataset under 20,000 records, which should allow for relatively quick training, I still need to address the issues of data aggregation and compression before proceeding with model training.
+
+## Progress and Next Steps
+
+I plan to test the model on more recent data. While I am not overly optimistic about improving the results, this will allow me to reduce the time interval between predictions and scale down to less than 1 day, providing more data for model training.
+
+For privacy reasons, this project is intentionally vague. If I manage to achieve solid results, it could later serve as a scenario generator for future analyses once the project is completed.
+
+## Note
+
+I have carried out this project alone, from contextualization to the current application. However, I am considering seeking feedback from an expert for the next steps and potentially collaborating in the future.
 
 ## Conclusion
 
-While progress is ongoing, there are still several challenges to overcome, especially around data processing and aggregation. However, the fact that my dataset is under 20,000 records should allow for faster training once the data issues are resolved. I am optimistic that once these hurdles are cleared, the project will be able to test the feasibility of using simple logic and news data to predict market trends.
+The project has shown that, while the results are not perfect, there is potential for applying these techniques to analyze and predict market trends, especially with historical data. Improvements are necessary to make the model more robust and extend it to longer periods of data.

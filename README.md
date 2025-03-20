@@ -24,7 +24,7 @@ Two key approaches were utilized:
 
 ## Results
 
-Despite relatively low R² values and occasionally negative results, the predictions demonstrated intriguing potential. Below are the details from the Linear Regression model:
+Despite relatively low R² values and occasionally negative results, the predictions demonstrated intriguing potential. Below are the details from the Linear Regression model for APPL stock prices:
 
                                  OLS Regression Results                                
 =======================================================================================

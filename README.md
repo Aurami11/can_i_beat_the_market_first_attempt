@@ -25,7 +25,7 @@ Two key approaches were utilized:
 ## Results
 
 Despite relatively low R² values and occasionally negative results, the predictions demonstrated intriguing potential. Below are the details from the Linear Regression model for APPL stock prices:
-
+```
                                  OLS Regression Results                                
 =======================================================================================
 Dep. Variable:        PRICE_VARIATION   R-squared (uncentered):                   0.217
@@ -88,6 +88,8 @@ Notes:
 [2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [3] The condition number is large, 2.14e+05. This might indicate that there are
 strong multicollinearity or other numerical problems.
+
+```
 
 Although the results did not show strong predictive power, some variables and features still demonstrated potential for better understanding stock price variations.
 

@@ -97,6 +97,9 @@ Although the results did not show strong predictive power, some variables and fe
 
 The next step involves extending the training dataset by increasing the time period from 2018-2019 to 2018-2022. This expansion will provide a broader range of data, allowing the model to learn from more diverse market conditions and potentially improve its predictive performance.
 
+## P.S
+I did try one year later the second iteration. The result looked good but need more investigation.
+
 If successful, the model could later be used as a scenario generator for future market analyses once the project is complete.
 
 ## Conclusion
